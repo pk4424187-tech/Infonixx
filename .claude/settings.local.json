@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"(New-Object -ComObject Word.Application).Documents.Open(''D:\\WorkSpace\\Infonixx\\IT_Services_Business_Models (1).docx'').Content.Text\")",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
