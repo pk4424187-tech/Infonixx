@@ -3,522 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Infonixx - Leading IT Services Company providing innovative technology solutions">
-    <title>Infonixx - IT Services & Solutions</title>
+    <meta name="description" content="Infonixx is temporarily unavailable while maintenance is in progress.">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Infonixx - Maintenance</title>
 
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="Site Logo.jfif">
     <link rel="shortcut icon" type="image/x-icon" href="Site Logo.jfif">
     <link rel="apple-touch-icon" href="Site Logo.jfif">
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            color-scheme: light;
+            --bg: #f4f7fb;
+            --ink: #172033;
+            --muted: #5d687a;
+            --line: #dbe2ec;
+            --brand: #2458d6;
+            --accent: #0e9f8f;
+            --surface: #ffffff;
+            --shadow: 0 24px 70px rgba(23, 32, 51, 0.13);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            min-height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: var(--ink);
+            background:
+                linear-gradient(135deg, rgba(36, 88, 214, 0.12), transparent 34%),
+                linear-gradient(315deg, rgba(14, 159, 143, 0.12), transparent 32%),
+                var(--bg);
+            line-height: 1.5;
+        }
+
+        main {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 24px;
+        }
+
+        .panel {
+            width: min(100%, 660px);
+            padding: clamp(32px, 6vw, 56px);
+            text-align: center;
+            background: rgba(255, 255, 255, 0.96);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .logo {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 28px;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 1px solid var(--line);
+        }
+
+        .status {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 0 0 18px;
+            color: #124e49;
+            font-size: 0.92rem;
+            font-weight: 700;
+        }
+
+        .status::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--accent);
+            box-shadow: 0 0 0 6px rgba(14, 159, 143, 0.12);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(2.1rem, 6vw, 4rem);
+            line-height: 1.05;
+            letter-spacing: 0;
+        }
+
+        p {
+            margin: 20px auto 0;
+            max-width: 500px;
+            color: var(--muted);
+            font-size: clamp(1rem, 2vw, 1.16rem);
+        }
+
+        .divider {
+            width: 92px;
+            height: 4px;
+            margin: 32px auto 0;
+            border-radius: 999px;
+            background: linear-gradient(90deg, var(--brand), var(--accent));
+        }
+
+        @media (max-width: 520px) {
+            main {
+                padding: 16px;
+            }
+
+            .panel {
+                padding: 30px 22px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <img src="Site Logo.jfif" alt="Infonixx Logo">
-                </div>
-                <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Transforming Businesses Through Technology</h1>
-                <p class="hero-subtitle">Delivering innovative IT solutions that drive growth and efficiency</p>
-                <div class="hero-buttons">
-                    <a href="#services" class="btn btn-primary">Our Services</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Infonixx</h2>
-                <div class="title-underline"></div>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Infonixx is a leading IT services company dedicated to delivering cutting-edge technology solutions that empower businesses to thrive in the digital age. With expertise spanning multiple domains, we provide comprehensive services tailored to meet your unique business needs.</p>
-                    <p>Our team of experienced professionals combines technical excellence with industry knowledge to deliver solutions that drive real business value. From strategic consulting to implementation and support, we partner with you every step of the way.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Our Clients Section -->
-    <section class="clients">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Clients</h2>
-                <div class="title-underline"></div>
-                <p class="section-subtitle">Trusted by industry leaders worldwide</p>
-            </div>
-            <div class="clients-ribbon">
-                <div class="clients-track">
-                    <div class="client-item">Genpact</div>
-                    <div class="client-item">Becton Dickinson</div>
-                    <div class="client-item">Deloitte</div>
-                    <div class="client-item">Cummins</div>
-                    <div class="client-item">Synechron</div>
-                    <div class="client-item">Orion Innovations</div>
-                    <div class="client-item">Agreeya</div>
-                    <div class="client-item">Altimetrik</div>
-                    <!-- Duplicate for seamless loop -->
-                    <div class="client-item">Genpact</div>
-                    <div class="client-item">Becton Dickinson</div>
-                    <div class="client-item">Deloitte</div>
-                    <div class="client-item">Cummins</div>
-                    <div class="client-item">Synechron</div>
-                    <div class="client-item">Orion Innovations</div>
-                    <div class="client-item">Agreeya</div>
-                    <div class="client-item">Altimetrik</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section class="why-choose-us">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Why Choose Infonixx</h2>
-                <div class="title-underline"></div>
-                <p class="section-subtitle">Partnering with us means choosing excellence and innovation</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>Innovation Driven</h3>
-                    <p>Leveraging cutting-edge technologies to deliver innovative solutions that keep you ahead of the competition.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Proven Expertise</h3>
-                    <p>Our team of certified professionals brings deep technical knowledge and industry experience to every project.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h3>24/7 Support</h3>
-                    <p>Round-the-clock support ensuring your systems run smoothly and issues are resolved promptly.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Scalable Solutions</h3>
-                    <p>Flexible and scalable solutions that grow with your business needs and adapt to market changes.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Services</h2>
-                <div class="title-underline"></div>
-                <p class="section-subtitle">Comprehensive IT solutions designed to accelerate your business</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-tasks"></i>
-                    </div>
-                    <h3>Project-Based Services</h3>
-                    <p>Custom application development, system migrations, and one-time IT projects with clear deliverables and predictable scope.</p>
-                    <ul class="service-features">
-                        <li>Fixed price or Time & Material models</li>
-                        <li>Clear deliverables</li>
-                        <li>Predictable scope</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3>Managed Services</h3>
-                    <p>Outsourced IT operations including infrastructure management, security, and helpdesk support with SLA-driven service delivery.</p>
-                    <ul class="service-features">
-                        <li>Recurring contracts</li>
-                        <li>24/7 support</li>
-                        <li>High accountability</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-users-cog"></i>
-                    </div>
-                    <h3>Staff Augmentation</h3>
-                    <p>Deploy skilled IT professionals to your team for flexible scaling and rapid resource mobilization.</p>
-                    <ul class="service-features">
-                        <li>Flexible billing models</li>
-                        <li>Fast scaling</li>
-                        <li>Expert talent pool</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <h3>Cloud Services</h3>
-                    <p>Cloud hosting, migration, and DevOps services with pay-per-use and subscription models for scalable infrastructure.</p>
-                    <ul class="service-features">
-                        <li>Cloud migration</li>
-                        <li>DevOps implementation</li>
-                        <li>Infrastructure optimization</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>AI & Machine Learning</h3>
-                    <p>AI-driven solutions including chatbots, analytics, and intelligent automation to transform your business processes.</p>
-                    <ul class="service-features">
-                        <li>Custom AI models</li>
-                        <li>Predictive analytics</li>
-                        <li>Process automation</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>RPA Solutions</h3>
-                    <p>Robotic Process Automation for intelligent automation and process optimization, delivering cost savings and efficiency.</p>
-                    <ul class="service-features">
-                        <li>Process automation</li>
-                        <li>Bot development</li>
-                        <li>Workflow optimization</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>ERP Services</h3>
-                    <p>ERP implementation, customization, and support for mission-critical business systems.</p>
-                    <ul class="service-features">
-                        <li>ERP implementation</li>
-                        <li>System integration</li>
-                        <li>Ongoing support</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>SAP Solutions</h3>
-                    <p>SAP ERP, S/4HANA implementation, and industry-specific modules for deep enterprise integration.</p>
-                    <ul class="service-features">
-                        <li>SAP implementation</li>
-                        <li>S/4HANA migration</li>
-                        <li>Custom modules</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-sitemap"></i>
-                    </div>
-                    <h3>ServiceNow Solutions</h3>
-                    <p>ITSM, workflow automation, and platform development for rapid adoption and workflow efficiency.</p>
-                    <ul class="service-features">
-                        <li>ITSM implementation</li>
-                        <li>Workflow automation</li>
-                        <li>Custom apps</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3>Digital IT Solutions</h3>
-                    <p>Web, mobile, e-commerce, and customer experience platforms supporting digital transformation initiatives.</p>
-                    <ul class="service-features">
-                        <li>Web development</li>
-                        <li>Mobile apps</li>
-                        <li>E-commerce platforms</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <h3>Consulting & Advisory</h3>
-                    <p>IT strategy, audits, and compliance consulting for strategic positioning and high-value outcomes.</p>
-                    <ul class="service-features">
-                        <li>IT strategy</li>
-                        <li>Technology audits</li>
-                        <li>Compliance consulting</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <h3>Global Managed Services</h3>
-                    <p>Enterprise-wide IT management across regions with long-term global contracts and comprehensive support.</p>
-                    <ul class="service-features">
-                        <li>Multi-region support</li>
-                        <li>Enterprise management</li>
-                        <li>24/7 operations</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Technologies Section -->
-    <section class="technologies">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Technologies We Use</h2>
-                <div class="title-underline"></div>
-                <p class="section-subtitle">Powered by the latest and most reliable technologies</p>
-            </div>
-            <div class="tech-grid">
-                <div class="tech-item">
-                    <i class="fab fa-aws"></i>
-                    <p>AWS</p>
-                </div>
-                <div class="tech-item">
-                    <i class="fab fa-microsoft"></i>
-                    <p>Azure</p>
-                </div>
-                <div class="tech-item">
-                    <i class="fab fa-google"></i>
-                    <p>Google Cloud</p>
-                </div>
-                <div class="tech-item">
-                    <i class="fab fa-python"></i>
-                    <p>Python</p>
-                </div>
-                <div class="tech-item">
-                    <i class="fab fa-java"></i>
-                    <p>Java</p>
-                </div>
-                <div class="tech-item">
-                    <i class="fab fa-node-js"></i>
-                    <p>Node.js</p>
-                </div>
-                <div class="tech-item">
-                    <i class="fab fa-react"></i>
-                    <p>React</p>
-                </div>
-                <div class="tech-item">
-                    <i class="fab fa-angular"></i>
-                    <p>Angular</p>
-                </div>
-                <div class="tech-item">
-                    <i class="fab fa-docker"></i>
-                    <p>Docker</p>
-                </div>
-                <div class="tech-item">
-                    <i class="fas fa-database"></i>
-                    <p>Databases</p>
-                </div>
-                <div class="tech-item">
-                    <i class="fas fa-brain"></i>
-                    <p>AI/ML</p>
-                </div>
-                <div class="tech-item">
-                    <i class="fas fa-code"></i>
-                    <p>DevOps</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Industries Section -->
-    <section class="industries">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Industries We Serve</h2>
-                <div class="title-underline"></div>
-                <p class="section-subtitle">Delivering specialized solutions across diverse sectors</p>
-            </div>
-            <div class="industries-grid">
-                <div class="industry-card">
-                    <i class="fas fa-hospital"></i>
-                    <h4>Healthcare</h4>
-                </div>
-                <div class="industry-card">
-                    <i class="fas fa-university"></i>
-                    <h4>Finance & Banking</h4>
-                </div>
-                <div class="industry-card">
-                    <i class="fas fa-shopping-cart"></i>
-                    <h4>Retail & E-commerce</h4>
-                </div>
-                <div class="industry-card">
-                    <i class="fas fa-industry"></i>
-                    <h4>Manufacturing</h4>
-                </div>
-                <div class="industry-card">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h4>Education</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Transform Your Business?</h2>
-                <p>Let's discuss how our IT solutions can help you achieve your business goals</p>
-                <div class="cta-buttons">
-                    <a href="#contact" class="btn btn-primary">Get Started</a>
-                    <a href="tel:312-931-6976" class="btn btn-secondary">Call Us Now</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="title-underline"></div>
-                <p class="section-subtitle">Let's discuss how we can help transform your business</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Address</h4>
-                            <p><strong>US Location (Headquarter)</strong> - 1553 State Route 27 Suite 1000, Somerset, NJ 08873</p>
-                            <p><strong>India</strong> - Plot no 67, Kadipur Kushak no 02- Meera Baghel road Near Chinta store Delhi 110036</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Phone</h4>
-                            <p><strong>India</strong> - <a href="tel:+916299617693">+91 6299 617 693</a></p>
-                            <p><strong>USA</strong> - <a href="tel:+13129316976">+1 312-931-6976</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <p><a href="mailto:info@infonixx.com">info@infonixx.com</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form-wrapper">
-                    <form action="https://formspree.io/f/mldzdena" method="POST" class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="logo">
-                        <img src="Site Logo.jfif" alt="Infonixx Logo">
-                    </div>
-                    <p>Transforming businesses through innovative IT solutions.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#services">Cloud Services</a></li>
-                        <li><a href="#services">AI & ML</a></li>
-                        <li><a href="#services">ERP Solutions</a></li>
-                        <li><a href="#services">Consulting</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <div class="social-links">
-                        <a href="https://linkedin.com/company/infonixx" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://twitter.com/infonixx" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://facebook.com/infonixx" target="_blank"><i class="fab fa-facebook"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Infonixx. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <main aria-labelledby="maintenance-title">
+        <section class="panel">
+            <img class="logo" src="Site Logo.jfif" alt="Infonixx logo">
+            <p class="status">Scheduled maintenance</p>
+            <h1 id="maintenance-title">We will be back soon.</h1>
+            <p>Our website is temporarily offline while updates are in progress.</p>
+            <div class="divider" aria-hidden="true"></div>
+        </section>
+    </main>
 </body>
 </html>
